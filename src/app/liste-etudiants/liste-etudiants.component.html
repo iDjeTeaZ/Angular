@@ -1,0 +1,7 @@
+<div *ngFor="let etudiant of serviceEtudiant.listeEtudiant; let i=index;">
+  <a href routerLink="/etudiant/{{i}}">
+  <img src="{{etudiant.photo}}" class="photoProfil">
+  {{etudiant.name}} {{etudiant.surname}}
+  </a>
+  - {{etudiant.age}} ans - {{etudiant.promo}}/{{etudiant.spe}}
+</div>

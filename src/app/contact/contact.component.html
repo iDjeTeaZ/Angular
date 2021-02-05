@@ -1,0 +1,29 @@
+<section>
+
+  <br>
+    <form #f="ngForm" (ngSubmit)="soumissionFormulaire(f)">
+        <input name="nom" [(ngModel)]="contact.nom" placeholder="Votre nom svp" type="text">
+
+        <br>
+        <br>
+
+        <input name="email" [(ngModel)]="contact.email" #ctlMail="ngModel" placeholder="Votre email svp" type="email" required>
+        <span *ngIf="ctlMail.invalid"> Merci de saisir un email</span>
+
+        <br>
+        <br>
+
+        <input name="sujet" [(ngModel)]="contact.sujet" placeholder="Sujet de votre message" type="text">
+
+        <br>
+        <br>
+
+        <textarea name="message" [(ngModel)]="contact.message" placeholder="Votre message ici, merci" required></textarea>
+
+        <br>
+        <br>
+
+        <input type="submit" value="ENVOYER" [disabled]="f.invalid">
+        <input type="reset" value="ANNULER">
+    </form>
+</section>

@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Romaric",
+    "surname": "BOULIN",
+    "promo": "ING3",
+    "spe":"ICC",
+    "age": 22,
+    "photo": "https://media.istockphoto.com/vectors/neutral-profile-picture-vector-id1091291084"
+  },{
+    "name": "Eloi",
+    "surname": "DEMOLIS",
+    "promo": "ING3",
+    "spe":"ICC",
+    "age": 22,
+    "photo": "https://media.istockphoto.com/vectors/neutral-profile-picture-vector-id1091291084"
+  },{
+    "name": "GUILLAUME",
+    "surname": "ESTEBE",
+    "promo": "ING3",
+    "spe":"ICC",
+    "age": 22,
+    "photo": "https://media.istockphoto.com/vectors/neutral-profile-picture-vector-id1091291084"
+  },{
+    "name": "Thibault",
+    "surname": "KOLLEN",
+    "promo": "ING3",
+    "spe":"ICC",
+    "age": 22,
+    "photo": "https://media.istockphoto.com/vectors/neutral-profile-picture-vector-id1091291084"
+  }
+]
