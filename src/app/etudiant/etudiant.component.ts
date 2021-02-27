@@ -11,6 +11,7 @@ import { EtudiantsService } from '../services/etudiants.service';
 export class EtudiantComponent implements OnInit {
 
   public etudiant:any
+  public indexEtu:number=-1
 
   constructor(public serviceEtudiant:EtudiantsService,private parametresRoute:ActivatedRoute) { }
 
@@ -19,6 +20,7 @@ export class EtudiantComponent implements OnInit {
     this.parametresRoute.params.subscribe(
       parametres => {
         let indexEtu = parametres['index'];
+        this.indexEtu=indexEtu;
         if(indexEtu && +indexEtu in this.serviceEtudiant.listeEtudiant) {
           this.etudiant = this.serviceEtudiant.listeEtudiant[+indexEtu];
         }

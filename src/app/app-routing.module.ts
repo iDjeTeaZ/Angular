@@ -13,6 +13,7 @@ const routes: Routes = [
   {path:"listeEtudiant",component:ListeEtudiantsComponent},
   {path:"contact",component:ContactComponent},
   {path:"etudiant/:index",component:EtudiantComponent},
+  {path:"edit/:index",component:EditComponent},
   {path:"edit",component:EditComponent},
   {path:"**",component:Error404Component}
 ];
