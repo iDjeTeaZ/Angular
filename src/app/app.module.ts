@@ -14,6 +14,7 @@ import { ListeEtudiantsComponent } from './liste-etudiants/liste-etudiants.compo
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { EditComponent } from './edit/edit.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { EditComponent } from './edit/edit.component';
     FooterComponent,
     ContactComponent,
     EditComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
