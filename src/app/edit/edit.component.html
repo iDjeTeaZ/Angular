@@ -1,0 +1,33 @@
+<section>
+
+    <br>
+      <form #f="ngForm" (ngSubmit)="soumissionFormulaire(f)">
+          <input name="name" [(ngModel)]="contact.name" placeholder="Prénom" type="text">
+  
+          <br>
+          <br>
+
+          <input name="surname" [(ngModel)]="contact.surname" placeholder="Nom" type="text">
+  
+          <br>
+          <br>
+
+          <input name="promo" [(ngModel)]="contact.promo" placeholder="Promotion" type="text">
+  
+          <br>
+          <br>
+          <input name="spe" [(ngModel)]="contact.spe" placeholder="Spécialité" type="text">
+  
+          <br>
+          <br>
+
+          <input name="age" [(ngModel)]="contact.age" placeholder="Age" type="text">
+  
+          <br>
+          <br>
+  
+          <input type="submit" value="MODIFIER" [disabled]="f.invalid">
+          <input type="reset" value="ANNULER">
+      </form>
+  </section>
+  

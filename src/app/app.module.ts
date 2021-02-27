@@ -13,6 +13,7 @@ import { EtudiantComponent } from './etudiant/etudiant.component';
 import { ListeEtudiantsComponent } from './liste-etudiants/liste-etudiants.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     EtudiantComponent,
     ListeEtudiantsComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
