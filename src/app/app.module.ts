@@ -25,7 +25,7 @@ import { EditComponent } from './edit/edit.component';
     ListeEtudiantsComponent,
     FooterComponent,
     ContactComponent,
-    EditComponent
+    EditComponent,
   ],
   imports: [
     BrowserModule,
