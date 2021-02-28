@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Etudiant } from 'src/model/etudiant';
 import { EtudiantsService } from '../services/etudiants.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-etudiant',
@@ -13,7 +14,7 @@ export class EtudiantComponent implements OnInit {
   public etudiant:any
   public indexEtu:number=-1
 
-  constructor(public serviceEtudiant:EtudiantsService,private parametresRoute:ActivatedRoute) { }
+  constructor(public serviceEtudiant:EtudiantsService,private parametresRoute:ActivatedRoute,public servAuth:AuthService) { }
 
   ngOnInit(): void {
 

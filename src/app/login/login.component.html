@@ -1,18 +1,18 @@
 <section>
 
     <br>
-      <form #f="ngForm" (ngSubmit)="soumissionFormulaire(f)">
+      <form #f="ngForm" (ngSubmit)="connexion(f)">
           <input name="login" [(ngModel)]="login.login" placeholder="Identifiant" type="text">
   
           <br>
           <br>
   
-          <input name="password" [(ngModel)]="login.password" #ctlMail="ngModel" placeholder="Mot de passe" type="paswword" required>
+          <input name="password" [(ngModel)]="login.password" #ctlMail="ngModel" placeholder="Mot de passe" type="password" required>
   
           <br>
           <br>
   
-          <input type="submit" value="ENVOYER">
+          <input type="submit" value="CONNEXION">
           <input type="reset" value="ANNULER">
       </form>
   </section>

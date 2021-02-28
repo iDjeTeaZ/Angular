@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -10,14 +11,12 @@ export class LoginComponent implements OnInit {
 
   login:any;
 
-  constructor() { }
+  constructor(private servAuth : AuthService) {this.login={id:"",mdp:""};}
 
   ngOnInit(): void {
   }
 
-  soumissionFormulaire(f:NgForm){
-    // console.log("Formulaire envoyé");
-    console.log("Données envoyées", f);
-    console.log("Comparaison des données", f.value, this.login)
+  connexion(f:NgForm){
+    this.servAuth.fctConnexion(f.value);
   }
 }

@@ -8,7 +8,9 @@
       <a class="nav-link" href routerLink="/">Accueil</a>
       <a class="nav-link" href routerLink="/listeEtudiant">Liste des étudiants</a>
       <a class="nav-link" href routerLink="/contact">Contact</a>
-      <a class="nav-link" href routerLink="/login">Connexion</a>
+      <a class="nav-link" href routerLink="/login" *ngIf="!servAuth.isConnected()">Connexion</a>
+      <a class="nav-link" (click)="deconnexion()" *ngIf="servAuth.isConnected()">Déconnexion</a>
+
     </div>
   </div>
 </nav>

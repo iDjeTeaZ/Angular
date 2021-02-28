@@ -4,5 +4,5 @@
   - {{etudiant.age}} ans - {{etudiant.promo}}/{{etudiant.spe}}
 </div>
 <div>
-  <button href routerLink="/edit/{{indexEtu}}">Modifier</button>
+  <button href routerLink="/edit/{{indexEtu}}" *ngIf="servAuth.canEdit()">Modifier</button>
 </div>
